@@ -1,0 +1,69 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div  class="container">
+        <div class="row">
+            <div class="mx-auto"><img class="introImg" src="{% static 'images/instructionsSymbol.png' %}" alt="An account symbol" width ="150px"></div>
+        </div>
+        <div class="row">
+            <div class="mx-auto">DraWit is a site mainly designed for drawing, which can be done on the canvas found under 'draw'. The function of each individual button is explained below. The account and share functions will be implemented in DraWit version 2.0 (byowa).</div>
+        </div>
+    </div>
+    <div class="container" id="instructionButton">
+        <div class="row">
+            <ul id="buttonMenu">
+                <li class="buttonMenuItem">
+                    <button id="colorButton" title="Pen color"><i class="fa fa-tint"></i></button>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="sizeButton" title="Pen size">5</button>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="uploadButton" title="upload background"><i class="fa fa-upload"></i></button>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="clearButton" type="button" title="Clear canvas"><i class="fa fa-trash-o"></i></button>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="toolsButton" title="Tools"><i id="toolDropdown" class="fa fa-pencil"></i></button>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="downloadButton" type="button" title="Download painting"><i class="fa fa-download"></i></button>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="canvasButton" title="Canvas size"><i class="fa fa-arrows"></i></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="instructionButton">
+        <div id="colorInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/colorInstruction.JPG' %}" alt="An account symbol" width ="400px"></div>
+            <div class="mx-auto">This button sets the color you are drawing with.<br>After clicking you can type the name or rgb value of the required color.<br>For a list of all colors click <a href="https://www.w3schools.com/colors/colors_picker.asp">here</a><a href="https://en.wikipedia.org/wiki/Full_stop">.</a></div>
+        </div>
+        <div id="sizeInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/sizeInstruction.JPG' %}" alt="An account symbol" width ="400px"></div>
+            <div class="mx-auto">This button sets the pen size.<br>After clicking you can typ the required pen size.</div>
+        </div>
+        <div id="clearInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/clearInstruction.JPG' %}" alt="An account symbol" width ="400px"></div>
+            <div class="mx-auto">This button clears the canvas.<br>Don't click it by accident.</div>
+        </div>
+        <div id="uploadInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/uploadInstruction.JPG' %}" alt="An account symbol" width ="400px"></div>
+            <div class="mx-auto">This button lets you upload a picture as background.<br> After clicking you can choose a picture from your pc.</div>
+        </div>
+        <div id="downloadInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/downloadInstruction.JPG' %}" alt="An account symbol" width ="600px"></div>
+            <div class="mx-auto">With this button you can download your painting.<br>After clicking you can find your painting in the map downloads</div>
+        </div>
+        <div id="canvasInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/canvasInstruction.JPG' %}" alt="An account symbol" width ="400px"></div>
+            <div class="mx-auto">This button sets the size of the canvas.<br>You can type the width in the first bar and the height in the second.</div>
+        </div>
+        <div id="toolsInstructions" class="row" style="display:none">
+            <div class="mx-auto"><img src="{% static 'images/toolInstruction.JPG' %}" alt="An account symbol" width ="400px"></div>
+            <div class="mx-auto">This button lets you change the tool.<br> After clicking you can choose between a pencil and an eraser.</div>
+        </div>
+    </div>
+{% endblock %}

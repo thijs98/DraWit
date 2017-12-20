@@ -1,0 +1,64 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <ul id="buttonMenu">
+                <li class="buttonMenuItem">
+                    <div class="dropdown">
+                        <button data-toggle="dropdown" title="Pen color"><i id="colorIcon" class="fa fa-tint"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><input id="colorInput" type="text" value="darkturquoise"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="buttonMenuItem">
+                    <div class="dropdown">
+                        <button id="sizeButton" data-toggle="dropdown" title="Pen size">5</button>
+                        <ul class="dropdown-menu">
+                            <li><input id="sizeInput" type="text" value="5"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="buttonMenuItem">
+                    <div class="dropdown">
+                        <button data-toggle="dropdown" title="upload background"><i class="fa fa-upload"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><input id="backgroundInput" type="file" value="file" text="Upload background"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="buttonMenuItem">
+                    <button id="clearButton" type="button" title="Clear canvas"><i class="fa fa-trash-o"></i></button>
+                </li>
+                <li class="buttonMenuItem">
+                    <div class="dropdown">
+                        <button data-toggle="dropdown" title="Tools"><i id="toolDropdown" class="fa fa-pencil"></i></button>
+                        <ul class="dropdown-menu">
+                            <li id="pencilTool"><i class="fa fa-pencil"></i></li>
+                            <li id="eraserTool"><i class="fa fa-eraser"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="buttonMenuItem">
+                    <a id="downloadButton"><button type="button" title="Download painting"><i class="fa fa-download"></i></button></a>
+                </li>
+                <li class="buttonMenuItem">
+                    <div class="dropdown">
+                        <button data-toggle="dropdown" title="Canvas size"><i class="fa fa-arrows"></i></button>
+                        <ul class="dropdown-menu">
+                            <li id="pencilTool">
+                                Width:<input id="canvasWidthInput" type="text" value="700">
+                                Height:<input id="canvasHeightInput" type="text" value="500">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto"><canvas id="canvas" width="700" height="500"></canvas></div>
+        </div>
+    </div>
+{% endblock %}

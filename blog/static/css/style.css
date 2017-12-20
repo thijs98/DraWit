@@ -1,0 +1,95 @@
+html 
+{
+    background-color: #FFFFFF;
+}
+
+h1
+{
+    margin-left: 20%;
+}
+
+canvas 
+{ 
+    background: #eee;
+    background-size:cover;
+    display: block; 
+    margin: 0 auto; 
+}
+
+#wTitle
+{
+    color: #00CED1;
+}
+
+.introImg
+{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#menuWrap
+{
+    background-color: #333;
+}
+
+#menu
+{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.menuItem
+{
+    float: left;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+
+.menuItem a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+}
+
+#buttonMenu
+{
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+}
+
+.buttonMenuItem
+{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#instructionButton
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.dropdown-menu li:hover
+{
+    background-color: #F0F0F0;
+}
+
+.active 
+{
+    background-color: white;
+}
