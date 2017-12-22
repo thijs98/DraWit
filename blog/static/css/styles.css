@@ -3,7 +3,7 @@ html
     background-color: #FFFFFF;
 }
 
-h1
+#title
 {
     margin-left: 20%;
 }
@@ -16,7 +16,7 @@ canvas
     margin: 0 auto; 
 }
 
-#wTitle
+#Title
 {
     color: #00CED1;
 }
@@ -92,4 +92,14 @@ li a:hover
 .active 
 {
     background-color: white;
+}
+
+.addPost
+{
+    margin-bottom: 5%;
+}
+
+.text
+{
+    width = 20%;
 }

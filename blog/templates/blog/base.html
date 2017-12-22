@@ -5,21 +5,19 @@
         <title>DraWit</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
         <script src="{% static 'javascript/jquery-3.2.1.min.js' %}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="{% static 'javascript/draw.js' %}"></script>
-        <script src="{% static 'javascript/instruction.js' %}"></script>
     </head>
     <body>
-        <h1>Dra<span id="wTitle">W</span>it</h1>
+        <h1 id="title">Dra<span id="Title">W</span>it</h1>
         <div id="menuWrap">
             <ul id="menu">
                 <li class="menuItem"><a href= "{% url 'main' %}">Draw</a></li>
-                <li class="menuItem"><a href= "share.html">Share</a></li>
+                <li class="menuItem"><a href= "{% url 'share' %}">Share</a></li>
                 <li class="menuItem"><a href= "{% url 'instruction' %}">Instructions</a></li>
-                <li class="menuItem" style="float:right"><a href= "account.html">Account</a></li>
+                <li class="menuItem" style="float:right"><a href= "{% url 'login' %}">Log in</a></li>
             </ul>
         </div>
         {% block content %}
